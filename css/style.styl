@@ -7,6 +7,27 @@
  *
  * Detailed information about this CSS: h5bp.com/css
  *
+ */
+
+/* =============================================================================
+   Variables
+   ========================================================================== */
+
+
+font-color = #222
+
+selection-bg = #fe57a1
+selection-color = #fff
+
+link-color = #00e
+link-visited = #551a8b
+link-hover = #06e
+
+
+
+
+
+/*
  * ==|== normalize ==========================================================
  */
 
@@ -43,11 +64,11 @@ audio:not([controls])
 html
   font-size 100%
   -webkit-text-size-adjust 100%
-  -ms-text-size-adjust 100%;
+  -ms-text-size-adjust 100%
 
 html, button, input, select, textarea
   font-family sans-serif
-  color #222
+  color font-color
 
 body
   margin 0
@@ -62,13 +83,13 @@ body
  */
 
 ::-moz-selection
-  background #fe57a1
-  color #fff
+  background selection-bg
+  color selection-color
   text-shadow none
 
 ::selection
-  background #fe57a1
-  color #fff
+  background selection-bg
+  color selection-color
   text-shadow none
 
 
@@ -77,11 +98,11 @@ body
    ========================================================================== */
 
 a
-  color #00e
+  color link-color
   &:visited
-    color #551a8b
+    color link-visited
   &:hover
-    color #06e
+    color link-hover
   &:focus
     outline thin dotted
 
@@ -171,6 +192,7 @@ ul, ol
 
 dd
   margin 0 0 0 40px
+
 nav ul, nav ol
   list-style none
   list-style-image none
